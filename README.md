@@ -8,8 +8,15 @@
 - Sign Up Form
 - Form Validation & useRef Hook
 - NOTE : If you have many fields in your react app use formik library.
+- Firebase setup
+- Deploying our app to production
+- Create sign up user
+- Created Redux store with userSlice
+- Implemented Sign Out
+- Update Profile
+- Fetch Movies from TMDB API
 
-...
+  ...
 
 # Features
 
