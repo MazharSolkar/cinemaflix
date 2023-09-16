@@ -7,13 +7,13 @@ const VideoBackground = ({ movieId }) => {
   useMovieTrailer(movieId);
 
   return (
-    <div>
+    <div className='w-screen'>
       <iframe
-        width='560'
-        height='315'
+        className='w-screen aspect-video'
         src={'https://www.youtube.com/embed/' + trailerVideo?.key}
         title='YouTube video player'
-        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'></iframe>
+        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'></iframe>{' '}
+      i want this video to auto play
     </div>
   );
 };
