@@ -28,6 +28,7 @@
 - Update Store with Trailer Video data.
 - Embedded the Youtube vide and make it autoplay and mute
 - Tailwind classes to make MainContainer look awesome
+- Custom hook for Popular, Top Rated and Upcoming Movies.
 
   ...
 
