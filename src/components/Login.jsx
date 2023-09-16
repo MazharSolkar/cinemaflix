@@ -9,6 +9,7 @@ import { auth } from '../utils/firebase';
 import { updateProfile } from 'firebase/auth';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
+import { USER_IMG } from '../utils/constant';
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -52,7 +53,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL: 'https://avatars.githubusercontent.com/u/86589812?v=4',
+            photoURL: USER_IMG,
           })
             .then(() => {
               // Profile updated!
@@ -63,17 +64,14 @@ const Login = () => {
                   uid: uid,
                   email: email,
                   displayName: displayName,
-                  photoURL: photoURL,
+                  photoURL: USER_IMG,
                 })
               );
             })
             .catch((error) => {
               // An error occurred
               // ...
-              console.log(error);
             });
-
-          console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -92,7 +90,6 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           // ...
-          console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;
