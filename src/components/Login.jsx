@@ -9,7 +9,7 @@ import { auth } from '../utils/firebase';
 import { updateProfile } from 'firebase/auth';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
-import { USER_IMG } from '../utils/constant';
+import { BACKGROUND, USER_IMG } from '../utils/constant';
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -40,7 +40,7 @@ const Login = () => {
     setErrorMessage(message);
     if (message) return; // if message is present(not null) then don't execute code after this and return
 
-    // Sign In / Sign Up
+    // Sign Up / Sign In
     if (!isSignInForm) {
       // Sign Up Logic
       createUserWithEmailAndPassword(
@@ -104,7 +104,7 @@ const Login = () => {
       <div className='absolute inset-0'>
         <img
           className='w-full h-full object-cover'
-          src='https://assets.nflxext.com/ffe/siteui/vlv3/00103100-5b45-4d4f-af32-342649f1bda5/64774cd8-5c3a-4823-a0bb-1610d6971bd4/IN-en-20230821-popsignuptwoweeks-perspective_alpha_website_large.jpg'
+          src={BACKGROUND}
           alt='banner'
         />
       </div>

@@ -30,6 +30,10 @@
 - Tailwind classes to make MainContainer look awesome
 - Custom hook for Popular, Top Rated and Upcoming Movies. Secondary Container complete.
 
+- GPT Search Page
+- GPT Search Bar
+- (BONUS) Multi-language Feature in our App
+
   ...
 
 # Features
