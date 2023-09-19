@@ -9,7 +9,7 @@ const MainContainer = () => {
   // if (movies === null) return; if movies not present return from here below is same
   if (!movies) return;
 
-  const mainMovie = movies[4];
+  const mainMovie = movies[5];
 
   const { original_title, overview, id } = mainMovie;
 
