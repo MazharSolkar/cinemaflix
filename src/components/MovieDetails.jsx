@@ -24,7 +24,7 @@ const MovieDetails = () => {
 
   return (
     <div className=''>
-      <Header />
+      {/* <Header /> */}
       {movie ? (
         <div>
           <img
